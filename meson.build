@@ -8,3 +8,4 @@ project_description = 'The ALICA Interfaces.'
 subproject('alica_common_config')
 subproject('alica_solver_interface')
 subproject('id_manager')
+subproject('zlib')
