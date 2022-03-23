@@ -3,15 +3,22 @@ project('alica_solver_interface', 'cpp',
   meson_version: '>=0.56.0',
   license : 'MPL-2.0')
 
-project_description = 'A library to define debug levels for Output.'
+project_description = 'A library that defines the solver interface of the ALICA Framework.'
+
+alica_common_config = dependency('alica_common_config', fallback : ['alica_common_config'])
 
 
 project_headers = [
-  'include/alica_common_config/common_defines.h',  
-  'include/alica_common_config/debug_output.h'
+  'include/alica_solver_interface/Interval.h'
+  'include/alica_solver_interface/SimpleContext.h'
+  'include/alica_solver_interface/SolverContext.h'
+  'include/alica_solver_interface/SolverTerm.h'
+  'include/alica_solver_interface/SolverVariable.h'
 ]
 
 project_source_files = [
+  'src/SolverTerm.cpp',
+  'src/SolverVariable.cpp'
 ]
 
 project_test_files = [
@@ -39,6 +46,7 @@ project_target = library(
   project_source_files,
   c_args : build_args,
   include_directories : public_headers,
+  dependencies : alica_common_config
 )
 
 
