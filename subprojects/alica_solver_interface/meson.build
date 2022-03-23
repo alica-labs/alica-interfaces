@@ -9,10 +9,10 @@ alica_common_config = dependency('alica_common_config', fallback : ['alica_commo
 
 
 project_headers = [
-  'include/alica_solver_interface/Interval.h'
-  'include/alica_solver_interface/SimpleContext.h'
-  'include/alica_solver_interface/SolverContext.h'
-  'include/alica_solver_interface/SolverTerm.h'
+  'include/alica_solver_interface/Interval.h',
+  'include/alica_solver_interface/SimpleContext.h',
+  'include/alica_solver_interface/SolverContext.h',
+  'include/alica_solver_interface/SolverTerm.h',
   'include/alica_solver_interface/SolverVariable.h'
 ]
 
