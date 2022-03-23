@@ -1,6 +1,6 @@
 project('alica_solver_interface', 'cpp',
   version : '0.0.0',
-  meson_version: '>=0.54.0',
+  meson_version: '>=0.56.0',
   license : 'MPL-2.0')
 
 project_description = 'A library to define debug levels for Output.'
